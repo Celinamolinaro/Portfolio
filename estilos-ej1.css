@@ -18,7 +18,7 @@
     src: url(fonts/PPMORI-EXTRALIGHTITALIC.OTF) format("opentype");
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: "PP-Mori-Semibold";
@@ -54,22 +54,34 @@ nav {
 }
 
 nav a {
-    font-family:"PP-Mori-Regular";
+    font-family: "PP-Mori-Regular";
     opacity: 0;
     transform: translateY(30px);
-    animation: navFadeInUp 0.7s cubic-bezier(0.4,0,0.2,1) forwards;
+    animation: navFadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-nav a:nth-child(1) { animation-delay: 0.1s; }
-nav a:nth-child(2) { animation-delay: 0.25s; }
-nav a:nth-child(3) { animation-delay: 0.4s; }
-nav a:nth-child(4) { animation-delay: 0.55s; }
+nav a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+nav a:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+nav a:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+nav a:nth-child(4) {
+    animation-delay: 0.55s;
+}
 
 @keyframes navFadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -86,7 +98,7 @@ nav a {
     transition: all 0.2s ease-in-out;
 }
 
-nav a:hover{
+nav a:hover {
     color: #a80a44;
 }
 
@@ -94,11 +106,12 @@ h2 {
     text-align: center;
 }
 
-#titulo-landing{
+#titulo-landing {
     animation: fadeInBottom 1s ease-out backwards;
 }
 
-#titulo-landing h2, #titulo-landing h1 {
+#titulo-landing h2,
+#titulo-landing h1 {
     opacity: 1;
     transform: none;
     animation: none;
@@ -107,8 +120,9 @@ h2 {
 @keyframes fadeInBottom {
     from {
         opacity: 0;
-        transform: translateY(-20px); 
+        transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -116,14 +130,15 @@ h2 {
 }
 
 #titulo-landing {
-h1 {
-    font-size: 6.5em;
-    text-align: center;
-}
-h2 {
-    font-size: 2.2em;
-    text-align: center;
-}
+    h1 {
+        font-size: 6.5em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
 }
 
 footer {
@@ -178,8 +193,8 @@ footer div {
     flex-wrap: wrap;
     margin-top: 40px;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.3s forwards;
-    
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+
     div p {
         max-width: 550px;
         font-family: "PP-Mori-Extralight";
@@ -193,23 +208,23 @@ footer div {
     display: flex;
     flex-wrap: nowrap;
     column-gap: 20px;
-    
+
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.1s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
 }
 
-    @keyframes fadeInLeft {
+@keyframes fadeInLeft {
     to {
-    opacity: 1;
-    transform: translateX(0);
-  }   
-  
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
 
- #titulo-sobremi h1 {
-        text-align: left;
-        font-size: 4.5em;
-    }
+#titulo-sobremi h1 {
+    text-align: left;
+    font-size: 4.5em;
+}
 
 #flor-lila-y-amarillo {
     width: 55px;
@@ -219,13 +234,14 @@ footer div {
 }
 
 @keyframes girar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-  
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
 }
 
 #contenedor-tarjetas-sm {
@@ -238,7 +254,7 @@ footer div {
     margin-top: 55px;
     margin-bottom: 70px;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.5s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
 }
 
 .tarjetas-sm {
@@ -270,14 +286,14 @@ footer div {
     flex-direction: column;
     row-gap: 20px;
     margin: 20px;
-}    
+}
 
 #contenedor-tarjetas-vertical {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.7s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.7s forwards;
 }
 
 #caja-iconos-skills {
@@ -285,6 +301,7 @@ footer div {
     flex-wrap: wrap;
     gap: 5px;
 }
+
 .iconos-skills {
     width: 33px;
 }
@@ -309,12 +326,12 @@ footer div {
     align-items: center;
     position: relative;
     padding-bottom: 60px;
- 
+
 }
 
 .titulo-proyectos {
     max-width: 1550px;
-    margin: 60px 0 60px 0; 
+    margin: 60px 0 60px 0;
     padding-top: 32px;
     font-size: 3em;
     font-family: 'PP-Mori-Semibold', sans-serif;
@@ -325,11 +342,11 @@ footer div {
     box-sizing: border-box;
     width: 100%;
     padding-left: calc((100vw - 1550px) / 2);
-    animation: fadeInGrid 1.1s cubic-bezier(0.4,0,0.2,1) both;
+    animation: fadeInGrid 1.1s cubic-bezier(0.4, 0, 0.2, 1) both;
     justify-content: center;
     text-align: center;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.1s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
 }
 
 .titulo-proyectos img {
@@ -401,7 +418,7 @@ footer div {
     max-width: 900px;
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subtitulo-proyectos.visible-scroll {
@@ -414,9 +431,9 @@ footer div {
 }
 
 .img-proyectos {
-    width: 95vw; 
-    max-width: 1200px; 
-    height: 700px; 
+    width: 95vw;
+    max-width: 1200px;
+    height: 700px;
     object-fit: cover;
     display: block;
     margin: 0 auto 32px auto;
@@ -435,7 +452,7 @@ footer div {
     border-radius: 40px;
     cursor: pointer;
     letter-spacing: 0.04em;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
     background: linear-gradient(90deg, #B7AFDE, #FF7129, #F8C838, #B7AFDE);
     background-size: 300% 100%;
     color: #191919;
@@ -474,6 +491,7 @@ footer div {
     0% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 100% 50%;
     }
@@ -481,11 +499,13 @@ footer div {
 
 .galeria-proyectos {
     min-height: 100vh;
-    padding: 40px 0 0 0;
+    padding: 40px 5% 0 5%;
+    box-sizing: border-box;
 }
+
 .titulo-proyectos {
     max-width: 1550px;
-    margin: 80px 0 150px 0; 
+    margin: 80px auto 100px auto;
     padding-top: 32px;
     font-size: 4.5em;
     font-family: 'PP-Mori-Semibold', sans-serif;
@@ -495,20 +515,20 @@ footer div {
     color: #191919;
     box-sizing: border-box;
     width: 100%;
-    padding-left: calc((100vw - 1550px) / 2);
-    animation: fadeInGrid 1.1s cubic-bezier(0.4,0,0.2,1) both;
+    animation: fadeInGrid 1.1s cubic-bezier(0.4, 0, 0.2, 1) both;
     justify-content: center;
     text-align: center;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.1s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
 }
+
 @media (max-width: 1100px) {
     .titulo-proyectos {
-        max-width: 95vw;
-        margin: 0 0 48px 0;
-        padding-left: 0;
+        font-size: 3em;
+        margin: 40px 0 60px 0;
     }
 }
+
 @media (max-width: 700px) {
     .titulo-proyectos {
         max-width: 98vw;
@@ -516,36 +536,39 @@ footer div {
         padding-left: 0;
     }
 }
+
 .grid-proyectos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 67px 70px; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px 40px;
     max-width: 1550px;
     margin: 0 auto;
     padding-bottom: 200px;
-    animation: fadeInGrid 1.1s cubic-bezier(0.4,0,0.2,1) both;
+    animation: fadeInGrid 1.1s cubic-bezier(0.4, 0, 0.2, 1) both;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.5s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
 }
 
 @keyframes fadeInGrid {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .proyecto {
     display: flex;
     flex-direction: column;
-    align-items: stretch; 
+    align-items: stretch;
 }
+
 .img-placeholder {
-    width: 100%; 
+    width: 100%;
     height: 320px;
     background: #6d6d6d;
     border-radius: 14px;
@@ -556,22 +579,26 @@ footer div {
     align-items: stretch;
     justify-content: stretch;
 }
+
 .img-placeholder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 14px;
-    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     will-change: transform;
     pointer-events: none;
 }
+
 .img-placeholder:hover img {
     transform: scale(1.07);
 }
+
 .info-proyecto {
     margin-left: 2px;
 }
+
 .nombre-proyecto {
     font-size: 1.7em;
     font-family: 'PP-Mori-Semibold', sans-serif;
@@ -583,6 +610,7 @@ footer div {
     display: flex;
     gap: 7px;
 }
+
 .capsula {
     display: inline-block;
     font-size: 0.9em;
@@ -593,35 +621,31 @@ footer div {
     font-family: 'PP-Mori-Extralight', sans-serif;
     margin-top: 10px;
 }
+
 @media (max-width: 1100px) {
     .grid-proyectos {
-        grid-template-columns: 1fr 1fr;
-        max-width: 95vw;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px 30px;
     }
+
     .img-placeholder {
-        width: 95vw;
-        max-width: 400px;
-        height: 220px;
-    }
-    .titulo-proyectos {
-        max-width: 95vw;
-        margin: 0 0 48px 0;
-        padding-left: 0;
+        height: 250px;
     }
 }
+
 @media (max-width: 700px) {
+    .titulo-proyectos {
+        font-size: 2.2em;
+        margin: 30px 0 40px 0;
+    }
+
     .grid-proyectos {
         grid-template-columns: 1fr;
-        max-width: 98vw;
+        gap: 30px;
     }
+
     .img-placeholder {
-        width: 98vw;
-        max-width: 400px;
-        height: 160px; 
-    }
-    .titulo-proyectos {
-        max-width: 98vw;
-        margin: 0 0 40px 0;
+        height: 200px;
     }
 }
 
@@ -634,6 +658,7 @@ footer div {
     align-items: center;
     min-height: 80vh;
 }
+
 .contacto-titulo {
     display: flex;
     align-items: center;
@@ -641,20 +666,23 @@ footer div {
     gap: 18px;
     margin-bottom: 25px;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.1s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
 }
+
 .flor-contacto {
     width: 48px;
     height: 48px;
     animation: girar 20s linear infinite;
     transform-origin: center;
 }
+
 .contacto-titulo h1 {
     font-size: 4.5em;
     font-family: 'PP-Mori-Semibold', sans-serif;
     color: #191919;
     margin: 0;
 }
+
 .contacto-descripcion {
     text-align: center;
     font-family: 'PP-Mori-Extralight', sans-serif;
@@ -664,20 +692,23 @@ footer div {
     max-width: 650px;
     line-height: 1.3em;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.4s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s forwards;
 }
+
 .form-contacto {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px;
     opacity: 0;
-    animation: fadeInUpContacto 0.8s cubic-bezier(0.4,0,0.2,1) 0.7s forwards;
+    animation: fadeInUpContacto 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.7s forwards;
 }
+
 .form-row {
     display: flex;
     gap: 16px;
 }
+
 .form-contacto input[type="text"],
 .form-contacto input[type="email"] {
     flex: 1;
@@ -691,10 +722,12 @@ footer div {
     outline: none;
     transition: border 0.2s;
 }
+
 .form-contacto input[type="text"]:focus,
 .form-contacto input[type="email"]:focus {
     border: 1.5px solid #a80a44;
 }
+
 .form-contacto textarea {
     min-height: 290px;
     padding: 14px 18px;
@@ -708,6 +741,7 @@ footer div {
     outline: none;
     transition: border 0.2s;
 }
+
 .form-contacto textarea:focus {
     border: 1.5px solid #a80a44;
 }
@@ -716,13 +750,16 @@ footer div {
     .contacto-main {
         padding: 30px 0 0 0;
     }
+
     .contacto-titulo h1 {
         font-size: 2em;
     }
+
     .flor-contacto {
         width: 32px;
         height: 32px;
     }
+
     .form-row {
         flex-direction: column;
         gap: 10px;
@@ -730,32 +767,35 @@ footer div {
 }
 
 @keyframes fadeInUpContacto {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeInUpVideo {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .img-proyectos {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: none;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: none;
 }
+
 .img-proyectos.video-visible {
-  animation: fadeInUpVideo 1s cubic-bezier(0.4,0,0.2,1) forwards;
+    animation: fadeInUpVideo 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
