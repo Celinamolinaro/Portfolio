@@ -799,3 +799,7 @@ footer div {
 .img-proyectos.video-visible {
     animation: fadeInUpVideo 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
+.main-sm {
+    margin: auto 0;
+}
